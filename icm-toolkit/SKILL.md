@@ -119,6 +119,8 @@ The walk test, exposed as its own standalone mode — for a folder that already 
 
 **1. Walk it cold.** Act as an agent with no memory of this folder. Open the entry file and try to complete one real task from it in order — do not read the whole tree first and then retroactively score it; that defeats the point of a cold walk.
 
+If the session running Assess has already read the folder, it is not cold, so hand the walk to a fresh subagent. When Don Roy's [`workflow-tracer`](https://github.com/donroy26/workflow-tracer) skill is installed (MIT, by Don's Bookshelf, built on the same walk test), use it for this step: one trace per real task. It logs every file the cold walker opens, scores Route, Budget, Catalog and Paths, and writes one HTML dashboard of the route. Its four checks feed checks 1, 6, 4 and 2 below; attach the dashboard path to the diagnosis. Run 2–3 typical tasks, not one. For a library or second brain, a task is a question ("what do I know about X?"), and Catalog is the check that matters. Without the tracer, walk it yourself as described above.
+
 **2. Run every check** from [The walk test](#the-walk-test) below (plus the System map extra checks, only if the folder is that form) and score each one PASS / PARTIAL / FAIL with concrete evidence. "Looks fine" is not evidence. "The entry file is 340 lines and mixes routing with content" is.
 
 **3. Roll it up**: an overall score, a band (walkable / close / not yet walkable), and a short, cheapest-first fix list naming exact files and exact moves. Report format, scoring bands, and a worked example: [references/map-and-assess.md](references/map-and-assess.md).
