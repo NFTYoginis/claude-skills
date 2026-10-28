@@ -44,3 +44,7 @@ icm-toolkit/
 ```
 
 MIT licensed, like the protocol it serves. See `LICENSE` (original copyright retained).
+
+## Works with
+
+- **[workflow-tracer](https://github.com/donroy26/workflow-tracer)** by Don Roy (Don's Bookshelf, MIT). It is a separate skill. When it is installed, Assess mode uses it for the cold walk: a fresh subagent traces one task, and you get a dashboard of every file it opened plus four checks. Install it from Don's repo; it is not vendored here.
